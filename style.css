@@ -1,0 +1,60 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+  transition: background 0.3s, color 0.3s;
+}
+header, footer {
+  background: #222;
+  padding: 1em;
+  text-align: center;
+}
+nav button {
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
+main {
+  padding: 1em;
+}
+.editor-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas#preview3D {
+  background: #444;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 1em;
+}
+#tools {
+  background: #222;
+  padding: 1em;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+#tools h2 {
+  margin-top: 1em;
+}
+#tools input, #tools select, #tools button {
+  width: 100%;
+  margin-top: 0.5em;
+  padding: 0.5em;
+  font-size: 1em;
+}
+#tools ul {
+  list-style: none;
+  padding: 0;
+}
+.light-theme {
+  background: #f4f4f4;
+  color: #111;
+}
+.light-theme header, .light-theme footer, .light-theme #tools {
+  background: #ddd;
+  color: #111;
+}
