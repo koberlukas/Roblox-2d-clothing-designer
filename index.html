@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,58 +6,50 @@
   <title>Roblox Clothing Editor</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark">
   <header>
     <h1>Roblox Clothing Editor</h1>
     <nav>
       <button id="start-fresh">Start Fresh</button>
-      <button id="upload">Upload Template</button>
+      <button id="upload-template">Upload Template</button>
+      <button id="export-btn">Export</button>
       <button id="settings-btn">⚙️</button>
     </nav>
   </header>
 
   <main>
-    <div class="editor-wrapper">
-      <canvas id="preview3D">Your browser doesn't support canvas.</canvas>
-      <aside id="tools">
-        <div>
-          <h2>Layers</h2>
-          <ul id="layer-list"></ul>
-          <button id="add-layer">➕ Add Layer</button>
-        </div>
-        <div>
-          <h2>Clothing Type</h2>
-          <select id="clothing-type">
-            <option>Auto Detect</option>
-            <option>Shirt</option>
-            <option>Pants</option>
-            <option>T-Shirt</option>
-          </select>
-        </div>
-        <div>
-          <h2>Upload Image</h2>
-          <input type="file" id="image-upload" accept="image/*">
-        </div>
-        <div>
-          <h2>Language</h2>
-          <select id="language-setting">
-            <option value="en">English</option>
-            <option value="da">Danish</option>
-          </select>
-        </div>
-        <div>
-          <h2>Theme</h2>
-          <select id="theme-setting">
-            <option value="dark">Dark</option>
+    <div class="editor">
+      <canvas id="canvas-2d"></canvas>
+      <div id="preview-3d-container">
+        <div id="preview-3d">3D Preview loading...</div>
+      </div>
+      <aside id="toolbar">
+        <h2>Tools</h2>
+        <button id="draw-btn">🖌️ Draw</button>
+        <button id="add-image-btn">🖼️ Add Image</button>
+        <button id="add-layer-btn">➕ Add Layer</button>
+        <ul id="layers"></ul>
+
+        <h3>Settings</h3>
+        <label>Theme:
+          <select id="theme-toggle">
+            <option value="dark" selected>Dark</option>
             <option value="light">Light</option>
           </select>
-        </div>
+        </label>
+
+        <label>Language:
+          <select id="language-toggle">
+            <option value="en" selected>English</option>
+            <option value="da">Danish</option>
+          </select>
+        </label>
       </aside>
     </div>
   </main>
 
   <footer>
-    <p>Made by koberlukas • <span id="mode-info">Dark Mode</span></p>
+    <p>Made by koberlukas</p>
   </footer>
 
   <script src="script.js"></script>
