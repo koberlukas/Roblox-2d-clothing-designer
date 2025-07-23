@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roblox Clothing Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <header>
+    <h1>Roblox Clothing Editor</h1>
+    <button id="openSettingsBtn" title="Settings">⚙️</button>
+  </header>
+
+  <main>
+    <p>Welcome to your Roblox clothing editor prototype!</p>
+    <!-- Your editor will go here -->
+  </main>
+
+  <div id="settingsModal" style="display:none;">
+    <h2>Settings</h2>
+    <label for="themeSelect">Theme:</label>
+    <select id="themeSelect">
+      <option value="dark" selected>Dark</option>
+      <option value="light">Light</option>
+    </select>
+    <label for="languageSelect">Language:</label>
+    <select id="languageSelect">
+      <option value="en" selected>English</option>
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+    </select>
+    <button id="closeSettingsBtn">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
